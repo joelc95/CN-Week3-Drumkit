@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link  rel="stylesheet" href="../CSS/style.css">
+    <script src="../Scripts/script.js" defer></script>
+    <title>Drumkit</title>
+</head>
+<body>
+    <div class="header-container">
+        <div class="header">
+            <h1>DRUMKIT</h1>
+        </div>
+    </div>
+
+    <div class="controls-container">
+        <div class="drum-type">
+            <p>a</p>
+            <p>ride</p>
+        </div>
+        <div class="drum-type">
+            <p>s</p>
+            <p>tom</p>
+        </div>
+        <div class="drum-type">
+            <p>d</p>
+            <p>kick</p>
+        </div>
+        <div class="drum-type">
+            <p>f</p>
+            <p>snare</p>
+        </div>
+        <div class="drum-type">
+            <p>g</p>
+            <p>hi hat</p>
+        </div>
+        <div class="drum-type">
+            <p>h</p>
+            <p>open hat</p>
+        </div>
+        <div class="drum-type">
+            <p>j</p>
+            <p>clap</p>
+        </div>
+        <div class="drum-type">
+            <p>k</p>
+            <p>boom</p>
+        </div>
+        <div class="drum-type">
+            <p>l</p>
+            <p>tink</p>
+        </div>
+    </div>
+
+    <div class="middle-container">
+        <div class="mixer-container">
+            <p>VOLUME CONTROLS:</p>
+            <div class=>
+                <label for="master">Master</label>
+                <input name="master" id="master-volume" type="range" step="0.1" min="0" max="1" value="0.5">
+            </div>
+            <div class=>
+                <label for="ride">Ride</label>
+                <input class="volume" id="ride-volume" type="range" step="0.1" min="0" max="1" value="0.5" name="ride">
+            </div>
+            <div class=>
+                <label for="tom">Tom</label>
+                <input class="volume" id="tom-volume" type="range" step="0.1" min="0" max="1" value="0.5" name="tom">
+            </div>
+            <div class=>
+                <label for="kick">Kick</label>
+                <input class="volume" id="kick-volume" type="range" step="0.1" min="0" max="1" value="0.5" name="kick">
+            </div>
+            <div class=>
+                <label for="snare">Snare</label>
+                <input class="volume" id="snare-volume" type="range" step="0.1" min="0" max="1" value="0.5" name="snare">
+            </div>
+            <div class=>
+                <label for="hi-hat">Hi-Hat</label>
+                <input class="volume" id="hi-hat-volume" type="range" step="0.1" min="0" max="1" value="0.5" name="hi-hat">
+            </div>
+            <div class=>
+                <label for="open-hat">Open Hat</label>
+                <input class="volume" id="open-hat-volume" type="range" step="0.1" min="0" max="1" value="0.5" name="open-hat">
+            </div>
+            <div class=>
+                <label for="clap">Clap</label>
+                <input class="volume" id="clap-volume" type="range" step="0.1" min="0" max="1" value="0.5" name="clap">
+            </div>
+            <div class=>
+                <label for="boom">Boom</label>
+                <input class="volume" id="boom-volume" type="range" step="0.1" min="0" max="1" value="0.5" name="boom">
+            </div>
+            <div class=>
+                <label for="tink">Tink</label>
+                <input class="volume" id="tink-volume" type="range" step="0.1" min="0" max="1" value="0.5" name="tink">
+            </div>
+        </div>
+        <div class="drumkit-container">
+            <div class="drum" id="ride">
+                <!-- <p>ride go here</p> -->
+                <img class="drum-img" id="ride-img" src="../Images/ride32copy.png">
+                <img class="drum-img" id="ride-img2" src="../Images/rideStand32 - Copy.png">
+                <audio id="ride-sound" src="../sounds/sounds/ride.wav"></audio>
+            </div>
+            <div class="drum" id="tom">
+                <!-- <p>tom go here</p> -->
+                <img class="drum-img" id="tom-img" src="../Images/tom32 - Copy.png">
+                <img class="drum-img" id="tom-img2" src="../Images/tomStand32 - Copy.png">
+                <audio id="tom-sound" src="../sounds/sounds/tom.wav"></audio>
+            </div>
+            <div class="drum" id="kick1">
+                <!-- <p>kick go here</p> -->
+                <div>
+                    <img class="drum-img" id="kick-img" src="../Images/kickTL32.png">
+                    <img class="drum-img" id="kick-img2" src="../Images/kickBL32.png">   
+                </div>
+                <!-- <div>
+                    <img class="drum-img" id="tom-img" src="../Images/kickTR32.png">
+                    <img class="drum-img" id="tom-img2" src="../Images/kickBR32.png">
+                </div> -->
+                <audio id="kick-sound" src="../sounds/sounds/kick.wav"></audio>
+            </div>
+            <div class="drum" id="kick2">
+                <!-- <p>kick go here</p> -->
+                <!-- <div>
+                    <img class="drum-img" id="tom-img" src="../Images/kickTL32.png">
+                    <img class="drum-img" id="tom-img2" src="../Images/kickBL32.png">   
+                </div> -->
+                <div>
+                    <img class="drum-img" id="kick-img" src="../Images/kickTR32.png">
+                    <img class="drum-img" id="kick-img2" src="../Images/kickBR32.png">
+                </div>
+                <audio id="kick-sound" src="../sounds/sounds/kick.wav"></audio>
+            </div>
+            <div class="drum" id="snare">
+                <!-- <p>snare go here</p> -->
+                <img class="drum-img" id="snare-img" src="../Images/snare32.png">
+                <img class="drum-img" id="snare-img2" src="../Images/snareStand32.png">
+                <audio id="snare-sound" src="../sounds/sounds/snare.wav"></audio>
+            </div>
+            <div class="drum" id="hi-hat">
+                <!-- <p>hi-hat go here</p> -->
+                <img class="drum-img" id="hi-hat-img" src="../Images/hi-hat32copy.png">
+                <img class="drum-img" id="hi-hat-img2" src="../Images/rideStand32 - Copy.png">
+                <audio id="hi-hat-sound" src="../sounds/sounds/hihat.wav"></audio>
+                <audio id="open-hat-sound" src="../sounds/sounds/openhat.wav"></audio>
+            </div>
+            <div class="drum" id="clap" hidden>
+                <audio id="clap-sound" src="../sounds/sounds/clap.wav"></audio>
+            </div>
+            <div class="drum" id="boom" hidden>
+                <audio id="boom-sound" src="../sounds/sounds/boom.wav"></audio>
+            </div>
+            <div class="drum" id="tink" hidden>
+                <audio id="tink-sound" src="../sounds/sounds/tink.wav"></auido>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="footer-container">
+        <div class="footer">
+            sprites and code by Joel :^)
+        </div>
+    </div>
+</body>
+</html>
